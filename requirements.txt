@@ -1,1 +1,2 @@
+sphinx
 my-test-package==0.1
