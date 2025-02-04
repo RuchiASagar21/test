@@ -2,6 +2,8 @@ version: 2
 build:
   image: latest
   os: ubuntu-lts-latest
+  tools:
+    - sphinx
 python:
   install:
     - requirements: requirements.txt  # Points to the requirements file
