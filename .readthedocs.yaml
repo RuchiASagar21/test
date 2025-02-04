@@ -2,7 +2,9 @@ version: 2
 build:
   image: latest
   os: ubuntu-lts-latest
+  commands:
+    - sphinx-build -b html . _build/html  # Command to run Sphinx and build HTML docs
 python:
   install:
-    - requirements: requirements.txt  # Install dependencies from the requirements file
+    - requirements: requirements.txt  # Install dependencies from requirements.txt
   pip_extra_index_url: https://581351078906.d.codeartifact.us-east-1.amazonaws.com/pypi/python/simple/  # Your CodeArtifact URL
