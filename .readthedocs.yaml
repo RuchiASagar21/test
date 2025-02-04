@@ -6,4 +6,3 @@ build:
 python:
   install:
     - requirements: requirements.txt  # Install dependencies from requirements.txt
-  pip_extra_index_url: "https://581351078906.d.codeartifact.us-east-1.amazonaws.com/pypi/python/simple/"  # Your CodeArtifact URL
