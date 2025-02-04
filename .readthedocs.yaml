@@ -3,7 +3,8 @@ build:
   image: latest
   os: ubuntu-lts-latest
   tools:
-    - sphinx
+    sphinx:  # Tool name as a key, with configuration if needed
+      version: latest  # Optional: specify the version of Sphinx if necessary
 python:
   install:
     - requirements: requirements.txt  # Points to the requirements file
