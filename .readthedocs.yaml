@@ -2,7 +2,7 @@ version: 2
 build:
   os: ubuntu-lts-latest
   commands:
-    - sphinx-build -b html . _build/html  # Command to run Sphinx and build HTML docs
+    - sphinx-build -v -b html . _build/html  # Add the `-v` flag for verbose output
 python:
   install:
     - requirements: requirements.txt  # Install dependencies from requirements.txt
