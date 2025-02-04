@@ -2,10 +2,7 @@ version: 2
 build:
   image: latest
   os: ubuntu-lts-latest
-  tools:
-    sphinx:  # Tool name as a key, with configuration if needed
-      version: latest  # Optional: specify the version of Sphinx if necessary
 python:
   install:
-    - requirements: requirements.txt  # Points to the requirements file
+    - requirements: requirements.txt  # Install dependencies from the requirements file
   pip_extra_index_url: https://581351078906.d.codeartifact.us-east-1.amazonaws.com/pypi/python/simple/  # Your CodeArtifact URL
