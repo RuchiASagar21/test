@@ -1,0 +1,7 @@
+version: 2
+build:
+  image: latest
+python:
+  install:
+    - requirements: requirements.txt  # Points to the requirements file
+  pip_extra_index_url: https://581351078906.d.codeartifact.us-east-1.amazonaws.com/pypi/python/simple/  # Your CodeArtifact URL
